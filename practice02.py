@@ -1,5 +1,13 @@
 
-def calculate_age(birth_year, current_year):
+def calculate_age(birth_year: int, current_year: int) -> str :
+    '''Foydalanuvchining tug'ilgan yili va hozirgi yil asosida yoshini hisoblaydi.
+    
+    Args:
+        birth_year (int): Tug'ilgan yil
+        current_year (int): Hozirgi yil
+    
+    Returns:
+        str: Foydalanuvchining yoshi va balog'atga yetganligi haqida xabar'''
     age = current_year - birth_year
 
     if age < 0 :
@@ -13,5 +21,5 @@ def calculate_age(birth_year, current_year):
 
     return f"Sizning yoshingiz {age} yosh . {x}"
 
-y = calculate_age(2005,2025)
-print(y)
+a: str = calculate_age(2005,2025)
+print(a)

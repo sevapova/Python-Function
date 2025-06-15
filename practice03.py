@@ -1,9 +1,28 @@
 
 
-def is_even(number):
+def is_even(number: int) -> bool :
     return number % 2 == 0 
+'''Sonning juft yoki toqligini aniqlash funksiyasi.
 
-def print_even_message(number):
+    Parametrlar:
+        number (int): Tekshiriladigan son.
+
+    Returns:
+        bool: True, agar son juft bo'lsa, aks holda False.
+
+    Scope:
+        - Local: number (faqat shu funksiyada ishlaydi)'''
+
+def print_even_message(number: int) -> None :
+    '''Son haqida xabar chiqarish funksiyasi.
+    
+    Agar son juft bo'lsa, "juft son" deb, aks holda "toq son" deb chiqaradi.
+
+    Parametrlar:
+        number (int): Natijasi chiqariladigan son.
+
+    Scope:
+        - Local: number'''
 
     if is_even(number):
         print(f"{number} juft son")

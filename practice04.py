@@ -1,5 +1,15 @@
 
-def get_grade(score) :
+def get_grade(score: int) -> str :
+    ''' Bahoni ball asosida aniqlovchi funksiya.
+
+    Args:
+        score (int): Foydalanuvchining olgan balli (0 dan 100 gacha).
+
+    Returns:
+        str: Baho ("A", "B", "C", "F") yoki xato xabari.
+
+    Scope:
+        - Local: score (funksiya ichida ishlatiladi)'''
     if score < 0 or score > 100 :
         return "Noto'g'ri ball kiritdingiz!"
     elif score >= 90:
@@ -14,4 +24,3 @@ def get_grade(score) :
 a = int(input("Ballingizni kiriting: "))
 b = get_grade(a)
 print(f"Sizning bahongiz: {b}")
-
